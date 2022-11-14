@@ -725,13 +725,14 @@ body {
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.7);
+    /* transform: translate(-50%, -50%) scale(0.7); */
+    transform: translate(-50%, -50%) scale(0) rotateZ(180deg);
 }
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1) rotateZ(360deg);
     width: 528px;
     height: 581px;
     background-color: var(--contrast-text-color);
